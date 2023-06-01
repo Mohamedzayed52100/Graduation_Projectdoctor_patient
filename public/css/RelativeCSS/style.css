@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-column-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-div {
+    min-height: 100vh;
+    background-image: linear-gradient(#70e1f5, #ffd194);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.login-div .login-comps {
+    background-image: linear-gradient(rgba(31, 28, 28, 0.5), rgba(32, 32, 32, 0.5));
+    padding: 2em;
+    border-radius: 3em;
+    color: white;
+}
+
+.login-div form {
+    padding: 28px 0;
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+
+}
+
+.login-div form input[type="text"],
+.login-div form input[type="email"],
+.login-div form input[type="tel"],
+.login-div form input[type="password"],
+.login-div form select {
+    margin: 0.5rem auto;
+    background: rgba(80, 227, 194, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 0px solid rgba(255, 255, 255, 0.18);
+    border-radius: 30px;
+    height: 35px;
+    padding: 1em;
+    width: 420px;
+    outline: none;
+}
+
+
+.login-div form input[type="text"]:focus,
+.login-div form input[type="email"]:focus,
+.login-div form input[type="tel"]:focus,
+.login-div form input[type="password"]:focus,
+.login-div form select:focus {
+    background-color: rgba(0, 0, 0, 0.329);
+    color: white;
+}
+
+.login-div form button {
+    background: #b7eaf3;
+    color: rgb(34, 22, 22);
+    border-radius: 10px;
+    margin: 1rem auto;
+    font-size: 1em;
+    padding: 0.7rem;
+    width: 180px;
+    border: none;
+    font-weight: 600;
+}
+
+.login-div form button:active {
+    transform: scale(0.95);
+}
+
+.login-div form input[type="text"]::placeholder,
+.login-div form input[type="email"]::placeholder,
+.login-div form input[type="tel"]::placeholder,
+.login-div form input[type="password"]::placeholder,
+.login-div form select ::placeholder {
+    color: white;
+    font-size: 1.2em;
+}
+
+.login-div .text-center {
+    margin-left: 255px;
+    margin-top: -17px;
+}
+
+.login-div a {
+
+    color: #b7eaf3;
+}
+
+@media (max-width: 576px) {
+    .login-div {
+        padding: 2rem 1.5rem !important;
+    }
+
+    .login-div .login-comps,
+    .login-div input[type="text"],
+    .login-div form input[type="email"],
+    .login-div form input[type="tel"],
+    .login-div input[type="password"] {
+        width: 100% !important;
+    }
+}

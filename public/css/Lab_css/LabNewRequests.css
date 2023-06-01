@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Style the cards */
+.cardRequest {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  background-color: #f1f1f1;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.cardRequest:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+  height: fit-content;
+}
+
+label {
+  margin-bottom: 10px;
+  width: 85px;
+  font-family: Lora;
+  color: #606c88;
+
+}
+
+input {
+  width: 65%;
+  border: transparent;
+  color: black;
+
+}
+.type , .medicine {
+  padding-left: 3px;
+  display: inline-block;
+  overflow-y: scroll;
+  height: 26px;
+  width: 65%;
+  background-color: rgb(255, 255, 255);
+  text-align: left;
+  color: gray;
+  padding-top: 4px;
+  padding-bottom: 3px;
+  
+}
+
+h3 {
+  font-family: Ubuntu;
+  color: #36405a;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+h4 {
+  font-family: Ubuntu;
+  color: #000000;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.acceptNote,
+.deleteNote {
+  font-size: 14px;
+  text-align: center;
+  font-family: Lora;
+}
+
+.btnContact {
+  background-color: #606c88;
+  color: rgb(255, 251, 251);
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btnContact:hover {
+  background-color: #3f4c6b;
+}
+
+.btnAccept,
+.btnYdelete {
+  background-color: #5cb854;
+  color: rgb(255, 251, 251);
+  margin: 10px 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+
+.btnAccept {
+  font-size: 17px;
+  width: 170px;
+  padding: 12px;
+
+}
+
+.btnYdelete {
+  width: 100px;
+  margin-left: 40px;
+  margin-right: 115px;
+  height: 30px;
+  font-size: 15px;
+
+}
+
+.btnAccept:hover,
+.btnYdelete:hover {
+  background-color: #377043;
+}
+
+
+.btnReject,
+.btnNdelete {
+  background-color: #be3a3a;
+  color: rgb(255, 251, 251);
+  margin: 10px 0;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btnReject {
+  font-size: 17px;
+  width: 170px;
+  padding: 12px;
+
+}
+
+.btnNdelete {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.btnReject:hover,
+.btnNdelete:hover {
+  background-color: #6b2424;
+}
+
+.lower-side {
+  padding: 1em 1em 4em 1em;
+  display: block;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.contBtn {
+  position: relative;
+  top: 1.5em;
+  margin-left: 110px;
+  background: #8bc34a;
+  color: #fff;
+  padding: .8em 3em;
+  -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+  border-radius: 25px;
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.contBtn:hover {
+  -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+  -webkit-transition: all .4s ease;
+  -moz-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+
+/*---------- Contact form -------------*/
+.chat-popup {
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  width: fit-content;
+
+}
+
+.Contactform-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+.Contactform-container h1 {
+
+  font-family: ubuntu;
+  text-align: center;
+
+}
+
+.Contactform-container .msglabel {
+  width: fit-content;
+
+}
+
+.Contactform-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+.Contactform-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.Contactform-container .btnSend,
+.btnCancel {
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.Contactform-container .btnSend {
+  background-color: #5cb854;
+}
+
+.Contactform-container .btnCancel {
+  background-color: red;
+}
+
+.Contactform-container .btnSend:hover ,.Contactform-container .btnCancel:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
